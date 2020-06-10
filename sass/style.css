@@ -19,6 +19,29 @@ p {
   color: #054053;
 }
 
+.caja {
+  border: 1px dotted grey;
+  width: 20rem;
+  margin: 0px auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.caja h1 {
+  color: lightgreen;
+}
+.caja p {
+  color: green;
+}
+.caja .info {
+  font-size: 3rem;
+}
+.caja .info .author {
+  font-size: 1rem;
+  color: orange;
+}
+
 /*
 COMPILACIÓN:
 en la raíz de nuestro proyecto, o donde se encuentra nuestro archivo .scss

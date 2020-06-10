@@ -28,6 +28,38 @@ p {
     // De esta manera no me tengo que acordar de los códigos de mis colores
 }
 
+// ANIDACIÓN 
+.caja {
+    // podemos también darle estilos a caja
+    border: 1px dotted grey;
+    width: 20rem;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+
+    // anidar elementos
+    h1 {
+        color: lightgreen;
+    }
+
+    // en css normal sería: .caja p {}
+    p {
+        color: green;
+    }
+
+    .info {
+        font-size: 3rem;
+        // Y podemos seguir anidando :D
+        .author {
+            font-size: 1rem;
+            color: orange;
+        }
+    }
+    // Note: ten en cuenta que .caja h1 tiene mayor Especificidad que solo h1
+}
+
 /*
 COMPILACIÓN:
 en la raíz de nuestro proyecto, o donde se encuentra nuestro archivo .scss
