@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 https://sass-lang.com/
 
@@ -5,27 +6,17 @@ INSTALANDO SASS:
 npm install -g sass
 
 */
-
-// Variables
-$fuente-tipica: san-serif, helvetica, Arial;
-$color-fondo: #edf2f6;
-$color-letra: lightblue;
-$color-secundario: rgb(5, 64, 83);
-
 body {
-    // Utilizar las variables
-    background-color: $color-fondo;
+  background-color: #edf2f6;
 }
 
 h1 {
-    // Utilizar las variables
-    font-family: $fuente-tipica;
-    color: $color-letra;
+  font-family: san-serif, helvetica, Arial;
+  color: lightblue;
 }
 
 p {
-    color: $color-secundario;
-    // De esta manera no me tengo que acordar de los códigos de mis colores
+  color: #054053;
 }
 
 /*
@@ -40,3 +31,4 @@ note:
     style.css, la salida, el nombre del archivo compilado
 */
 
+/*# sourceMappingURL=style.css.map */
