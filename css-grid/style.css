@@ -21,9 +21,18 @@ body {
   background-color: #dea5a4 !important;
 }
 
+.orange {
+  background-color: #ffb347 !important;
+}
+
+.gray {
+  background-color: gray !important;
+}
+
 .layout {
   border: 2px solid #ffb347;
   padding: 0.65rem;
+  height: 30rem;
   /* Definir el Grid Layout */
   display: grid;
   /* Tamaño de las lineas de la cuadricula */
@@ -34,7 +43,8 @@ body {
   /* grid-template-columns: tamaño-colum-1 tamaño-colum-2 ...; */
   /* fracción del espacio libre en la cuadrícula (usando la unidad fr) */
   /* repeat(4, 1fr) : quiero 4 columnas de una fracción */
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 3fr 2fr;
 }
 .layout .caja {
   font-size: 1.6rem;
