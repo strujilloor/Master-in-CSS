@@ -1,1 +1,5 @@
 // Compilar Sass, donde se encuentra nuestro archivo .scss: sass --watch style.scss style.css
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
