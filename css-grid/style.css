@@ -22,6 +22,9 @@ body {
 
 .layout {
   border: 2px solid #ffb347;
+  padding: 0.65rem;
+  /* Definir el Grid Layout */
+  display: grid;
 }
 .layout .caja {
   font-size: 1.6rem;
@@ -29,7 +32,6 @@ body {
   color: white;
   padding: 1.25rem;
   border: 4px solid #222;
-  margin: 0.625rem;
   background-color: #b7d042;
 }
 

@@ -29,6 +29,11 @@ body {
 
 .layout {
     border: 2px solid $pastel-orange;
+    padding: .65rem; // Separar los elementos de los borders
+
+    /* Definir el Grid Layout */
+    display: grid;
+
 
     .caja {
         font-size: 1.6rem;
@@ -36,7 +41,6 @@ body {
         color: white;
         padding: 1.25rem; // 20px
         border: 4px solid #222;
-        margin: 0.625rem; // 10px
         background-color: $color-default; // color de fondo por defecto
     }
 }
