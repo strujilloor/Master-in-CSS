@@ -30,9 +30,12 @@ body {
 .layout {
     border: 2px solid $pastel-orange;
     padding: .65rem; // Separar los elementos de los borders
-
+    
     /* Definir el Grid Layout */
     display: grid;
+
+    /* Tamaño de las lineas de la cuadricula */
+    gap: 0.65rem;
 
 
     .caja {

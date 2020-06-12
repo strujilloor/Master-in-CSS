@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
@@ -25,6 +26,8 @@ body {
   padding: 0.65rem;
   /* Definir el Grid Layout */
   display: grid;
+  /* Tamaño de las lineas de la cuadricula */
+  gap: 0.65rem;
 }
 .layout .caja {
   font-size: 1.6rem;
