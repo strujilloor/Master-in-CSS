@@ -1,6 +1,36 @@
 body {
+  text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+}
+
+.red {
+  background-color: #ff6961 !important;
+}
+
+.green {
+  background-color: #77dd77 !important;
+}
+
+.blue {
+  background-color: #5d9b9b !important;
+}
+
+.pink {
+  background-color: #dea5a4 !important;
+}
+
+.layout {
+  border: 2px solid #ffb347;
+}
+.layout .caja {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  padding: 1.25rem;
+  border: 4px solid #222;
+  margin: 0.625rem;
+  background-color: #b7d042;
 }
 
 /*# sourceMappingURL=style.css.map */
