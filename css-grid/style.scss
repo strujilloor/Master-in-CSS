@@ -36,7 +36,7 @@ body {
 .layout {
     border: 2px solid $pastel-orange;
     padding: .65rem; // Separar los elementos de los borders
-    height: 30rem; // definimos una altura para quitar la altura automática
+    // height: 30rem; // definimos una altura para quitar la altura automática
     
     /* Definir el Grid Layout */
     display: grid;
@@ -52,7 +52,8 @@ body {
     /* fracción del espacio libre en la cuadrícula (usando la unidad fr) */
     /* repeat(4, 1fr) : quiero 4 columnas de una fracción */
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 3fr 2fr;
+    grid-template-rows: 1fr 6fr 4fr;
+    /* mejor no trabajar con altura fija, y decimales si quieres las proporciones correctas */
 
 
     .caja {
