@@ -41,7 +41,10 @@ body {
     Los valores representan el tamaño del track y,
     el espacio entre ellos representa la línea de la cuadrícula. */
     /* grid-template-columns: tamaño-colum-1 tamaño-colum-2 ...; */
-    grid-template-columns: 4fr 3fr 2fr 1fr; // note: más recomendable que el %
+
+    /* fracción del espacio libre en la cuadrícula (usando la unidad fr) */
+    /* repeat(4, 1fr) : quiero 4 columnas de una fracción */
+    grid-template-columns: repeat(4, 1fr);
 
 
     .caja {
