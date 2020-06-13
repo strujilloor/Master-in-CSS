@@ -23,6 +23,10 @@ body {
 }
 .green {
     background-color: $pastel-green !important;
+
+    /* Expansión Filas */
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 .blue {
     background-color: $pastel-blue !important;
@@ -32,10 +36,14 @@ body {
     background-color: $pastel-pink !important;
     /* Expansión */
     /* span: expanda el elemento tantas lineas */
-    grid-column: span 2;
+    grid-column: span 1;
+    /* Abreviatura / shorthand */
+    grid-row: 3 / 5;
 }
 .orange {
     background-color: $pastel-orange !important;
+
+    grid-row: 3 / 5;
 }
 .gray {
     background-color: gray !important;
@@ -64,7 +72,7 @@ body {
     /* fracción del espacio libre en la cuadrícula (usando la unidad fr) */
     /* repeat(4, 1fr) : quiero 4 columnas de una fracción */
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 6fr 4fr;
+    grid-template-rows: 1fr 6fr  1fr 1fr 4fr;
     /* mejor no trabajar con altura fija, y decimales si quieres las proporciones correctas */
 
 
