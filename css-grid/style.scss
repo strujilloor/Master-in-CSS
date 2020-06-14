@@ -105,3 +105,39 @@ body {
         padding: 1rem;
     }
 }
+
+/* RESPONSIVE */
+/* desde la anchura 0px hasta la anchura 760px de pantalla */
+@media (max-width: 760px) {
+    .website {
+
+        width: 100%;
+
+        /* GRID AREAS */
+        grid-template-areas: 
+            "header header header header header"
+            "menu menu menu menu menu"
+            "content content content content content"
+            "sidebar sidebar sidebar sidebar sidebar"
+            "footer footer footer footer footer";
+        
+        .content {
+            gap: 1rem;
+            padding: 1rem;
+
+            article {
+                padding: .5rem;
+            }
+        }
+
+        .menu {
+            ul {
+                grid-template-columns: repeat(5, 1fr);
+
+                li {
+                    margin-right: .4rem;   
+                }
+            }
+        }
+    }
+}
