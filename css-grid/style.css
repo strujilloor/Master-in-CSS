@@ -46,6 +46,8 @@ body {
 }
 
 .layout {
+  width: 80%;
+  margin: 0px auto;
   border: 2px solid #ffb347;
   padding: 0.65rem;
   min-height: 30rem;

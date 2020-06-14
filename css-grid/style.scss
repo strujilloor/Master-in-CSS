@@ -19,7 +19,7 @@ body {
 
     /* Expansión */
     grid-column-start: 1; // comienza en la linea 1
-    grid-column-end: 4; // termina en la linea 3
+    grid-column-end: 4; // termina en la linea 4
 }
 .green {
     background-color: $pastel-green !important;
@@ -54,6 +54,8 @@ body {
 }
 
 .layout {
+    width: 80%;
+    margin: 0px auto;
     border: 2px solid $pastel-orange;
     padding: .65rem; // Separar los elementos de los borders
     min-height: 30rem; // definimos una altura para quitar la altura automática
