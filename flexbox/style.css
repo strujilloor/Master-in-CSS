@@ -19,8 +19,10 @@ body {
       row-reverse 
       column 
       column-reverse */
-  flex-direction: row-reverse;
   /* Note: si display es flex, row-reverse alinea el contenido a la derecha */
+  /* Envoltorio */
+  /* shorthand: une direction con wrap*/
+  flex-flow: row wrap;
   border: 1px solid gray;
   padding: 5px;
 }

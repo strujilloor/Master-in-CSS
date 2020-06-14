@@ -21,8 +21,14 @@ body {
         row-reverse 
         column 
         column-reverse */
-    flex-direction: row-reverse; // output: 4 3 2 1
+    // flex-direction: row; // output: 4 3 2 1
     /* Note: si display es flex, row-reverse alinea el contenido a la derecha */
+
+    /* Envoltorio */
+    // flex-wrap: wrap; // No se salga del contenedor y reubicar abajo
+    /* shorthand: une direction con wrap*/
+    flex-flow: row wrap;
+
 
 
     border: 1px solid gray;
