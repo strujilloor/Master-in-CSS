@@ -11,7 +11,16 @@ body {
 
 .layout {
   /* Definir Flexbox layout */
-  display: inline-flex;
+  display: flex;
+  /* Direcciones */
+  /* Podemos definir columnas o filas */
+  /* Valores: 
+      row (default)
+      row-reverse 
+      column 
+      column-reverse */
+  flex-direction: row-reverse;
+  /* Note: si display es flex, row-reverse alinea el contenido a la derecha */
   border: 1px solid gray;
   padding: 5px;
 }
