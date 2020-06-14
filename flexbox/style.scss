@@ -11,6 +11,10 @@ body {
 }
 
 .layout {
+    /* Definir Flexbox layout */
+    display: flex; // width 100% del contenedor
+
+
     border: 1px solid gray;
     padding: 5px;
 

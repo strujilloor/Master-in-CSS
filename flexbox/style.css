@@ -10,6 +10,8 @@ body {
 }
 
 .layout {
+  /* Definir Flexbox layout */
+  display: flex;
   border: 1px solid gray;
   padding: 5px;
 }
