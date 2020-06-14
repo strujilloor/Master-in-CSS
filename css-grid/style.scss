@@ -45,11 +45,15 @@ body {
 
         grid-column: span 5;
 
+        /* Centrar */
+        line-height: 73px;
+        text-align: center;
+        
         ul {
             display: grid;
             grid-template-columns: repeat(9, 1fr);
             list-style: none;
-
+            
             a {
                 text-decoration: none;
             }
