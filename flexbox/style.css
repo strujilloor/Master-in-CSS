@@ -11,7 +11,7 @@ body {
 
 .layout {
   /* Definir Flexbox layout */
-  display: flex;
+  display: inline-flex;
   border: 1px solid gray;
   padding: 5px;
 }

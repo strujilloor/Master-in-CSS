@@ -12,7 +12,7 @@ body {
 
 .layout {
     /* Definir Flexbox layout */
-    display: flex; // width 100% del contenedor
+    display: inline-flex; // el tamaño de adapta al contenido, width auto
 
 
     border: 1px solid gray;
