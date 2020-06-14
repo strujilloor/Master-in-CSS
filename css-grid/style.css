@@ -2,7 +2,6 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  text-align: center;
   margin: 0px;
 }
 
@@ -24,6 +23,11 @@ body {
   background-color: lightseagreen;
   color: white;
   grid-column: span 5;
+  /* CENTRAR CONTENIDO */
+  /* Utilizar flex funciona mejor que utilizar el mismo grid para esto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .website .menu {
   background-color: lightblue;
