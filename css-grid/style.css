@@ -2,25 +2,33 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  text-align: center;
   margin: 0px;
 }
 
 .website {
   width: 75%;
-  height: 100vh;
+  /* hv altura del navegador */
+  height: calc(100vh - 2px);
   margin: 0px auto;
   border: 1px solid #cccccc;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 12% 10% 68% 10%;
 }
 .website .header {
   background-color: lightseagreen;
   color: white;
+  grid-column: span 5;
 }
 .website .menu {
   background-color: lightblue;
   color: black;
+  grid-column: span 5;
 }
 .website .content {
   background-color: #eeeeee;
+  grid-column: span 4;
 }
 .website .content article {
   background-color: #cccccc;
@@ -29,10 +37,12 @@ body {
 .website .sidebar {
   background-color: orange;
   color: white;
+  grid-column: 5/6;
 }
 .website .footer {
   background-color: black;
   color: white;
+  grid-column: span 5;
 }
 
 /*# sourceMappingURL=style.css.map */
