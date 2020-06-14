@@ -17,7 +17,7 @@ body {
   /* GRID AREAS */
   /* no se puede cortar un elemento */
   /* facilita los media queries porque solo se modifica esto */
-  grid-template-areas: "sidebar header header header header" "sidebar menu menu menu menu" "sidebar content content content content" "sidebar footer footer footer .";
+  grid-template-areas: "sidebar header header header header" "sidebar menu menu menu menu" "sidebar content content content content" "sidebar footer footer footer footer";
 }
 .website * {
   margin: 0px;
@@ -61,16 +61,19 @@ body {
 .website .content article {
   background-color: #cccccc;
   border: 1px solid #555555;
+  padding: 1rem;
 }
 .website .sidebar {
   background-color: orange;
   color: white;
   grid-area: sidebar;
+  padding: 1rem;
 }
 .website .footer {
   background-color: black;
   color: white;
   grid-area: footer;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,7 @@ body {
         "sidebar header header header header"
         "sidebar menu menu menu menu"
         "sidebar content content content content"
-        "sidebar footer footer footer ."; // . espacio vacío
+        "sidebar footer footer footer footer"; // . espacio vacío
 
 
     * {
@@ -82,6 +82,8 @@ body {
         article {
             background-color: #cccccc;
             border: 1px solid #555555;
+
+            padding: 1rem;
         }
     }
 
@@ -90,6 +92,8 @@ body {
         color: white;
 
         grid-area: sidebar;
+
+        padding: 1rem;
     }
 
     .footer {
@@ -97,5 +101,7 @@ body {
         color: white;
 
         grid-area: footer;
+
+        padding: 1rem;
     }
 }
