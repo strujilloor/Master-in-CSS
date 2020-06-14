@@ -1,1 +1,46 @@
 // Compilar Sass, donde se encuentra nuestro archivo .scss: sass --watch style.scss style.css
+
+/*-------------EJERCICIO COMPLETO--------------*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    // text-align: center;
+    margin: 0px;
+}
+
+.website {
+    width: 75%;
+    height: 100vh; // 95 de la altura del navegador
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+
+    .header {
+        background-color: lightseagreen;
+        color: white;
+    }
+
+    .menu {
+        background-color: lightblue;
+        color: black;
+    }
+
+    .content {
+        background-color: #eeeeee;
+
+        article {
+            background-color: #cccccc;
+            border: 1px solid #555555;
+        }
+    }
+
+    .sidebar {
+        background-color: orange;
+        color: white;
+    }
+
+    .footer {
+        background-color: black;
+        color: white;
+    }
+}
