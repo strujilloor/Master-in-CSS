@@ -20,6 +20,15 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 12% 10% 68% 10%;
 
+    /* GRID AREAS */
+    /* no se puede cortar un elemento */
+    /* facilita los media queries porque solo se modifica esto */
+    grid-template-areas: 
+        "sidebar header header header header"
+        "sidebar menu menu menu menu"
+        "sidebar content content content content"
+        "sidebar footer footer footer ."; // . espacio vacío
+
 
     * {
         margin: 0px;
@@ -30,7 +39,7 @@ body {
         background-color: lightseagreen;
         color: white;
 
-        grid-column: span 5;
+        grid-area: header; /* definimos el nombre */
 
         /* CENTRAR CONTENIDO */
         /* Utilizar flex funciona mejor que utilizar el mismo grid para esto */
@@ -43,7 +52,7 @@ body {
         background-color: lightblue;
         color: black;
 
-        grid-column: span 5;
+        grid-area: menu;
 
         /* Centrar */
         line-height: 73px;
@@ -63,7 +72,7 @@ body {
     .content {
         background-color: #eeeeee;
 
-        grid-column: span 4;
+        grid-area: content;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -80,13 +89,13 @@ body {
         background-color: orange;
         color: white;
 
-        grid-column: 5 / 6;
+        grid-area: sidebar;
     }
 
     .footer {
         background-color: black;
         color: white;
 
-        grid-column: span 5;
+        grid-area: footer;
     }
 }
