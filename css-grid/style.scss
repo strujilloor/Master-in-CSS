@@ -19,7 +19,12 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 12% 10% 68% 10%;
-    
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
 
     .header {
         background-color: lightseagreen;
@@ -33,12 +38,27 @@ body {
         color: black;
 
         grid-column: span 5;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            list-style: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
     }
 
     .content {
         background-color: #eeeeee;
 
         grid-column: span 4;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
 
         article {
             background-color: #cccccc;

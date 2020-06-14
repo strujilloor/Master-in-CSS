@@ -16,6 +16,10 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 12% 10% 68% 10%;
 }
+.website * {
+  margin: 0px;
+  padding: 0px;
+}
 .website .header {
   background-color: lightseagreen;
   color: white;
@@ -26,9 +30,21 @@ body {
   color: black;
   grid-column: span 5;
 }
+.website .menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+.website .menu ul a {
+  text-decoration: none;
+}
 .website .content {
   background-color: #eeeeee;
   grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
 .website .content article {
   background-color: #cccccc;
