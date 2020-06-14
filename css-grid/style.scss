@@ -108,7 +108,8 @@ body {
 
 /* RESPONSIVE */
 /* desde la anchura 0px hasta la anchura 760px de pantalla */
-@media (max-width: 760px) {
+/* only screen: Used for computer screens, tablets, smart-phones etc. */
+@media only screen and (max-width: 760px) {
     .website {
 
         width: 100%;
