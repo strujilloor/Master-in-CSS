@@ -33,27 +33,25 @@ body {
   border: 4px solid #222222;
   margin: 10px;
   background-color: #76c5d6;
+  /* FLEX GROW */
+  /* espacio que ocupara el elemento proporcionalmente */
+  flex-grow: 1;
 }
 .layout .first-box {
+  flex-grow: 1;
   background-color: lightcoral;
-  /* Orden */
-  order: 3;
 }
 .layout .second-box {
+  flex-grow: 1;
   background-color: lightgreen;
-  /* Orden */
-  order: 4;
 }
 .layout .third-box {
+  flex-grow: 4;
   background-color: lightskyblue;
-  /* Orden */
-  order: 1;
-  /* Note: -1 si no se define el orden en los otros elementos */
 }
 .layout .fourth-box {
+  flex-grow: 1;
   background-color: orange;
-  /* Orden */
-  order: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
