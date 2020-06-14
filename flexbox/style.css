@@ -36,15 +36,24 @@ body {
 }
 .layout .first-box {
   background-color: lightcoral;
+  /* Orden */
+  order: 3;
 }
 .layout .second-box {
   background-color: lightgreen;
+  /* Orden */
+  order: 4;
 }
 .layout .third-box {
   background-color: lightskyblue;
+  /* Orden */
+  order: 1;
+  /* Note: -1 si no se define el orden en los otros elementos */
 }
 .layout .fourth-box {
   background-color: orange;
+  /* Orden */
+  order: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
