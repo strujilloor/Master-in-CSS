@@ -39,6 +39,12 @@ body {
     /* funciona tanto para texto como para elementos */
     justify-content: center;
 
+    /* Alineación Vertical */
+    height: 72vh;
+    align-items: flex-start;
+
+    flex-grow: 1;
+
 
 
     border: 1px solid gray;
@@ -54,15 +60,19 @@ body {
     }
 
     .first-box {
+        align-self: flex-start;
         background-color: var(--rojo);
     }
     .second-box {
+        align-self: center;
         background-color: lightgreen;
     }
     .third-box {
+        align-self: center;
         background-color: lightskyblue;
     }
     .fourth-box {
+        align-self: flex-end;
         background-color: orange;
     }
 }

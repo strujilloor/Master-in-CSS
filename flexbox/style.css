@@ -32,6 +32,10 @@ body {
   /* con center podemos sustituir el margin 0 auto */
   /* funciona tanto para texto como para elementos */
   justify-content: center;
+  /* Alineación Vertical */
+  height: 72vh;
+  align-items: flex-start;
+  flex-grow: 1;
   border: 1px solid gray;
   padding: 5px;
 }
@@ -44,15 +48,19 @@ body {
   background-color: #76c5d6;
 }
 .layout .first-box {
+  align-self: flex-start;
   background-color: var(--rojo);
 }
 .layout .second-box {
+  align-self: center;
   background-color: lightgreen;
 }
 .layout .third-box {
+  align-self: center;
   background-color: lightskyblue;
 }
 .layout .fourth-box {
+  align-self: flex-end;
   background-color: orange;
 }
 
