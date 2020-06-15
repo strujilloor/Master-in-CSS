@@ -57,6 +57,9 @@ body {
     }
     .third-box {
         flex-grow: 4;
+        /* SHRINK */
+        /* define la capacidad de un elemento flexible de encogerse si es necesario. */
+        flex-shrink: 5; /* default 1 */
         background-color: lightskyblue;
     }
     .fourth-box {
