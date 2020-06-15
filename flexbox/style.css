@@ -28,6 +28,10 @@ body {
   /* Envoltorio */
   /* shorthand: une direction con wrap*/
   flex-flow: row wrap;
+  /* Alineación Horizontal */
+  /* con center podemos sustituir el margin 0 auto */
+  /* funciona tanto para texto como para elementos */
+  justify-content: center;
   border: 1px solid gray;
   padding: 5px;
 }
@@ -38,12 +42,6 @@ body {
   border: 4px solid #222222;
   margin: 10px;
   background-color: #76c5d6;
-  /* Flex Basis */
-  /* es el width de los flexbox */
-  flex-basis: calc((100% / 3) - 68px);
-  /* utilizarlo combinado con el grow, lo hace más flexible */
-  /* hace que se adapten mejor */
-  flex-grow: 1;
 }
 .layout .first-box {
   background-color: var(--rojo);
@@ -55,8 +53,6 @@ body {
   background-color: lightskyblue;
 }
 .layout .fourth-box {
-  /* Flex Basis */
-  flex-basis: 100%;
   background-color: orange;
 }
 
