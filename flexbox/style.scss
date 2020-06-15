@@ -4,6 +4,11 @@ Donde se encuentra nuestro archivo .scss, utilizando el siguiente comando:
 sass --watch style.scss style.css
 */
 
+// Variables
+:root {
+    --rojo: lightcoral;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -42,28 +47,27 @@ body {
         margin: 10px;
         background-color: #76c5d6;
 
-        /* FLEX GROW */
-        /* espacio que ocupara el elemento proporcionalmente */
-        flex-grow: 1; // 1 para que cada caja ocupe el mismo espacio
+        /* Flex Basis */
+        /* es el width de los flexbox */
+        flex-basis: calc((100% / 3) - 68px);
+
+        /* utilizarlo combinado con el grow, lo hace más flexible */
+        /* hace que se adapten mejor */
+        flex-grow: 1;
     }
 
     .first-box {
-        flex-grow: 1;
-        background-color: lightcoral;
+        background-color: var(--rojo);
     }
     .second-box {
-        flex-grow: 1;
         background-color: lightgreen;
     }
     .third-box {
-        flex-grow: 4;
-        /* SHRINK */
-        /* define la capacidad de un elemento flexible de encogerse si es necesario. */
-        flex-shrink: 5; /* default 1 */
         background-color: lightskyblue;
     }
     .fourth-box {
-        flex-grow: 1;
+        /* Flex Basis */
+        flex-basis: 100%;
         background-color: orange;
     }
 }
