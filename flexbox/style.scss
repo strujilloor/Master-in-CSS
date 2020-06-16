@@ -16,11 +16,13 @@ sass --watch style.scss style.css
     height: auto; // altura según su contenido
     margin: 0px auto; // centrado en la pantalla
     border: 1px solid rgba(225,255,226, 0.8);
-    box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0px 0px 12px #ccc;
     margin-top: 40px; // separado de los bordes superiores e inferiores
     margin-bottom: 40px;
 
     min-height: 600px; // altura minima, superándola se ajusta al contenido
+
+    border-radius: .5rem;
 }
 
 .header {
@@ -29,20 +31,22 @@ sass --watch style.scss style.css
     flex-wrap: wrap; // si el contenido sobresale, ubiquelo abajo
     align-items: center; // centra verticalmente
 
-    height: 7.5rem; // para centrar verticalmente se requiere una altura
-    border: 1px solid rgba(225,255,226, 0.8);
+    min-height: 5rem; // para centrar verticalmente se requiere una altura
+    border-bottom: 1px solid rgb(225, 255, 226, 0.8);
+
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 
     .logo {
-        flex-basis: 65%; // ancho para los items dentro de flex layout
+        flex-basis: 30%; // ancho para los items dentro de flex layout
         flex-grow: 1;
 
         padding: 0.625rem;
-        margin-left: 1.25rem;
 
         h1 {
             // Fuente
             font-family: 'Raleway', sans-serif;
-            font-style: italic;
+            // font-style: italic;
             font-weight: 900;
             font-size: 2.188rem;
             color: black;
@@ -53,27 +57,30 @@ sass --watch style.scss style.css
 
     .menu {
         flex-grow: 1;
-        flex-basis: 30%;
+        flex-basis: 60%;
         height: 100%;
-        padding-right: 1.25rem;
 
         ul {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            // flex-wrap: wrap; // poner en el media query
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
             
             height: 100%;
             list-style: none;
 
-            a {
-                color: #444444;
-                text-transform: uppercase;
+            li {
                 padding: 0.938rem;
-                transition: all 300ms;
+
+                a {
+                    color: #444444;
+                    text-transform: uppercase;
+                    transition: all 300ms;
+                }
             }
-            a:hover {
+
+            li:hover {
                 background-color: #ccc;
                 color: white;
 
@@ -84,7 +91,7 @@ sass --watch style.scss style.css
 
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; // around
 
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -92,18 +99,21 @@ sass --watch style.scss style.css
     .projects {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-content: space-between;
         flex-basis: 80%;
 
         .project {
-            flex-grow: 1; // para que cada elemento en caso de ser necesario se ajuste
-            flex-basis: 250px;
+            // flex-grow: 1; // el tamaño se auto ajuste al ancho del contenedor
+            flex-basis: 15.625rem;
             margin-bottom: 1.563rem;
-            margin-right: 1.25rem;
+            // margin-right: 1.25rem;
             border: 1px solid #ccc;
 
-            img {
-                width: 100%;
+            .image-wrap {
+                // width: 100%;
+                width: 250px;
+                height: 180px   ;
             }
 
             .project-info {
@@ -130,12 +140,10 @@ sass --watch style.scss style.css
 
     .sidebar {
         flex-basis: 15%;
-        margin-right: 1.875rem;
-        padding: 15px;
+        padding: 0.938rem;
 
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
 
         h2 {
             display: block;
@@ -147,12 +155,12 @@ sass --watch style.scss style.css
             margin-bottom: 1.25rem;
             border-bottom: 1px solid rgba(225,255,226, 0.8);
             text-align: center;
-
-
         }
 
         ul {
             list-style: none;
+            display: flex;
+            flex-flow: column wrap;
 
             li {
                 padding-bottom: 1.25rem;
@@ -163,8 +171,8 @@ sass --watch style.scss style.css
                     background-color: #eee;
                     color: #444444;
                     text-align: center;
-                    transition: all 300ms;
                     text-transform: uppercase;
+                    transition: all 300ms;
                 }
 
                 a:hover {
@@ -179,65 +187,42 @@ sass --watch style.scss style.css
 .footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
 
-    height: 7.5rem;
+    height: 5rem;
     align-items: center;
     border-top: 1px solid rgba(225,255,226, 0.8);
 
+    padding: 0rem 1.25rem 0rem 1.25rem;
+
     .logo {
+        flex-grow: 1;
         opacity: 0.5;
         flex-basis: auto;
-        flex-grow: 1;
-        margin-left: 1.25rem;
     }
 
     .info {
         flex-grow: 1;
-        margin-right: 1.25rem;
         text-align: right;
         color: #444;
     }
 }
 
-@media (max-width: 1334px) {
+@media(max-width: 765px) {
     .header {
-        text-align: center;
-
+        .logo {
+            h1 {
+                text-align: center;
+            }
+        }
         .menu {
             ul {
-                margin-top: 1.25rem;
-                align-items: flex-start;
+                flex-flow: row wrap;
                 justify-content: space-evenly;
-                // background-color: red;
             }
         }
     }
-}
 
-@media (max-width: 646px) {
     .content {
-        flex-wrap: wrap;
-        flex-direction: column;
-
-        .sidebar {
-            margin-right: 0px;
-
-            ul {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-
-                li {
-                    flex-grow: 1;
-                    margin-right: 0.313rem;
-                    margin-left: 0.313rem;
-                }
-            }
-        }
-        .project {
-            margin-right: 0.625rem !important;
-            margin-left: 0.625rem;
-        }
+        flex-flow: column wrap;
     }
 }
