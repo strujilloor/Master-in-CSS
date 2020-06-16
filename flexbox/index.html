@@ -1,33 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Raleway:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Flexbox</title>
+    <title>Proyecto Portafolio</title>
 </head>
 <body>
-    <h1>Master en CSS - Flexbox</h1>
-    <h3>Hoy aprenderemos Flexbox, una nueva forma de organizar elementos y maquetar una web con CSS.</h3>
+    
+    <!-- Inicio container -->
+    <div class="container">
 
-    <!-- Debemos definir la caja que contenga la layout de flexbox -->
-    <main class="layout">
-        <!-- Flexbox solo va a actuar dentro de este div -->
-        <div class="box first-box">
-            Primera Caja
-        </div>
-        <div class="box second-box">
-            Segunda Caja
-        </div>
-        <div class="box third-box">
-            Tercera Caja
-        </div>
-        <div class="box fourth-box">
-            Cuarta Caja
-        </div>
-    </main>
+        <!-- Inicio cabecera -->
+        <header class="header">
+            <div class="logo">
+                <h1>Portafolio</h1>
+            </div>
 
-    <p>Hola soy Stiven Trujillo y este es el Master en CSS - Flexbox</p>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin cabecera -->
+
+        <!-- Inicio contenido -->
+        <section class="content">
+            <!-- Inicio sidebar -->
+            <aside class="sidebar">
+                <h2>¿Qué quieres ver?</h2>
+                <ul>
+                    <li>
+                        <a href="">Webs</a>
+                    </li>
+                    <li>
+                        <a href="">Apps</a>
+                    </li>
+                    <li>
+                        <a href="">Diseños</a>
+                    </li>
+                    <li>
+                        <a href="">Otros</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Fin sidebar -->
+
+            <!-- Inicio projects -->
+            <div class="projects">
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="image-wrap">
+                        <img src="https://via.placeholder.com/250x180" alt="">
+                    </div>
+
+                    <div class="project-info">
+                        <a href="">Nombre Proyecto</a>
+                        <p>Sitio web</p>
+                    </div>
+                </article>
+            </div>
+            <!-- Fin projects -->
+        </section>
+        <!-- Fin contenido -->
+
+        <!-- Inicio footer -->
+        <footer class="footer">
+            <div class="logo">
+                Portafolio
+            </div>
+
+            <div class="info">
+                Master en CSS - Stiven Trujillo WEB &copy;
+            </div>
+        </footer>
+        <!-- Fin footer -->
+    </div>
+    <!-- Fin container -->
+
 </body>
 </html>
